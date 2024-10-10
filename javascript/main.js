@@ -15,18 +15,18 @@ function seleZona() {
 }
 
 function seleInput() {
+    // Seecciona la entrada del select elegir entrada
     const select = document.querySelector('select#entrada');
     entrada = select.value;
-    const textoSeleccionado = select.options[select.selectedIndex].text;
-    //alert(entrada + ' - ' + textoSeleccionado);
+    // Si hay zoona elegida hablitar el botón enviar
     if (zona !== '') {
         // Habilitar el botón
         document.querySelector('#aplicar').disabled = false;
     }
 }
-
+/* La función enviar llama a la función importada según la entrada seleccionada y lo coloca en la zona seleccionada. */
 function enviar() {
-    // Limpia la zona seleccionada
+    // Limpiar la zona seleccionada
     document.querySelector(`#${zona}`).innerHTML = '';
     // comprueba cual es la zona seleccionada y ejecuta la función de creación
     // correspondiente (switch)
@@ -48,6 +48,7 @@ function enviar() {
     }
 }
 
+// Asignación de funciones al objeto window
 window.seleZona = seleZona;
 window.seleInput = seleInput;
 

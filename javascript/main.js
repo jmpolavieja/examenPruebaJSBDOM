@@ -1,55 +1,33 @@
-import { creaImagen, creaTabla, creaParrafo, creaLista } from "./funciones.js";
+// Añadir las importaciones de las funciones que crean la imagen, la tabla, el párrafo y l lista
 
+// Variables para guardar la zona y la entrada
 let zona = '';
 let entrada = '';
 
+// Esta función guarda la zona seleccionada
 function seleZona() {
-    const select = document.querySelector('select#zona');
-    zona = select.value;
-    const tetoSelecioando = select.options[select.selectedIndex].text;
-    //alert(`Valor: ${zona}, Texto: ${tetoSelecioando}`);
-    if (entrada !== '') {
-        // Habilitar el botón
-        document.querySelector('#aplicar').disabled = false;
-    }
+    // Selecciona la zona del select elegir zona y lo guarda
+    
+    // Si hay entrada, habilito el botón aplicar
+    
 }
 
+// Esta función guarda la entrada seleccionada
 function seleInput() {
-    // Seecciona la entrada del select elegir entrada
-    const select = document.querySelector('select#entrada');
-    entrada = select.value;
-    // Si hay zoona elegida hablitar el botón enviar
-    if (zona !== '') {
-        // Habilitar el botón
-        document.querySelector('#aplicar').disabled = false;
-    }
+    // Selecciona la entrada del select elegir entrada y la guarda
+    
+    // Si hay zona elegida, hablitar el botón aplicar
+    
 }
-/* La función enviar llama a la función importada según la entrada seleccionada y lo coloca en la zona seleccionada. */
+
+/* La función enviar llama a la función importada según 
+la entrada seleccionada y lo coloca en la zona seleccionada. */
 function enviar() {
-    // Limpiar la zona seleccionada
-    document.querySelector(`#${zona}`).innerHTML = '';
-    // comprueba cual es la zona seleccionada y ejecuta la función de creación
-    // correspondiente (switch)
-    switch (entrada) {
-        case 'img':
-            document.querySelector(`#${zona}`).append(creaImagen());
-            break;
-        case 'table':
-            document.querySelector(`#${zona}`).append(creaTabla());
-            break;
-        case 'list':
-            document.querySelector(`#${zona}`).append(creaLista());
-            break;
-        case 'p':
-            document.querySelector(`#${zona}`).append(creaParrafo());
-            break;
-        default:
-            break;
-    }
+    // Limpiar la zona seleccionada (para que no se coloquen más de una entrada en la zona)
+    
+    /* comprueba cual es la zona seleccionada y ejecuta la función de creación
+    correspondiente (switch)*/
+    
 }
 
 // Asignación de funciones al objeto window
-window.seleZona = seleZona;
-window.seleInput = seleInput;
-
-window.enviar = enviar;

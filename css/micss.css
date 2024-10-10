@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+}
+
+.principal {
+    height: 80vh;
+    margin-top: 20px;
+}
+
+.abc {
+    height: 65%;
+    margin-bottom: 20px;
+}
+
+.zonad {
+    height: 32%;
+    margin: 10px;
+}
+
+.footer {
+    height: 20vh;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+}

@@ -4,17 +4,18 @@ El archivo index lo tienes montado con bootstrap para que puedas estudiar cómo 
 
 ## Actividad 1
 
-* Modifica a tu gusto los coores y la distribución del grid de resultado.
+* Modifica a tu gusto los colores y la distribución del grid de resultado.
 * Añade un botón, debajo del de enviar con el texto Limpiar Grid
 
 ## Actividad 2
 
 * Crea la carpeta javascript
 
-* Mueve los dos archivos de javascript a la carpeta:
+* Mueve el archivo main de javascript a la carpeta y el archivo de funciones:
 
 ### main.js
 ### funciones.js
 
-Los archivos tiene parte de código y comentarios con el rabajo que teneis que realizar. Una vez completado el código, debe enlazarse correctamente en index.html
+los archivos están incompletos, en el propio archivo puedes ver los ejercicios que tienes que hacer para completar el código.
+
 
